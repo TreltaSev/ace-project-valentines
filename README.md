@@ -10,7 +10,7 @@ pip install git+https://github.com/TreltaSev/siblink.git
 
 2. Run Initialization
 ```
-siblink run init
+siblink run init 
 ```
 
 ### Commands:
