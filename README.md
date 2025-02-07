@@ -17,10 +17,5 @@ siblink run init
 
 - Run Development:
 ```
-siblink run --ps dev
-```
-
-- Push Release:
-```
-siblink run scripts/release -- "Release Message"
+bun run dev
 ```
