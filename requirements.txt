@@ -1,0 +1,4 @@
+click==8.1.8
+colorama==0.4.6
+pyucc==1.7
+siblink @ git+https://github.com/TreltaSev/siblink.git@c90aa3123ddb20a82692aa5d81eb7b49af252484
