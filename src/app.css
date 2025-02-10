@@ -24,4 +24,28 @@
 	}
 }
 
+@layer components {
+	.overlay {
+		@apply relative;
+
+		&:before {
+			content: '';
+			@apply absolute inset-0 opacity-0;
+			border-radius: inherit;
+			background-color: var(--overlay-bg, black);
+			opacity: var(--overlay-start-opacity, 0);
+		}
+
+		&:hover:before {
+			opacity: var(--overlay-end-opacity, 0.1);
+		}
+	}
+
+	.q-outline {
+		box-shadow:
+			0px 4px 4px 0px rgba(0, 0, 0, 0.25),
+			0px 0px 0px 1px rgba(255, 255, 255, 0.1);
+	}
+}
+
 @custom-variant dark (&:where(.dark, .dark *));
