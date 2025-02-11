@@ -1,9 +1,9 @@
 <script lang="ts">
-	import { Flex, Button, Span } from '@ui';
+	import { Flex, Button, Span, Page } from '@ui';
 	import { SpeedDial } from '@lib/components';
 </script>
 
-<Flex.Col class="size-full items-center justify-center overflow-hidden select-none">
+<Page._>
 	<Flex.Col class="items-center size-full mt-50 gap-10">
 		<!-- Title -->
 		<Flex.Col class="items-center">
@@ -27,7 +27,4 @@
 			</Flex.Row>
 		</Flex.Col>
 	</Flex.Col>
-
-	<!-- Speed Dial -->
-	<SpeedDial />
-</Flex.Col>
+</Page._>
