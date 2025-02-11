@@ -17,12 +17,12 @@
 
 {#if href}
 	<a {href}>
-		<button class={cn(buttonCls)} {...$$restProps} on:click>
+		<button class={buttonCls} {...$$restProps} on:click>
 			<slot />
 		</button>
 	</a>
 {:else}
-	<button class={cn(buttonCls)} {...$$restProps} on:click>
+	<button class={buttonCls} {...$$restProps} on:click>
 		<slot />
 	</button>
 {/if}
