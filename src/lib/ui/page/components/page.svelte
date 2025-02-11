@@ -14,7 +14,7 @@
 	export { className as class };
 
 	export let pageClass =
-		'flex flex-col size-full items-center justify-center select-none px-90 box-border';
+		'flex flex-col size-full items-center justify-center select-none px-90 box-border h-fit';
 
 	$: pageCls = cn(pageClass, className);
 </script>

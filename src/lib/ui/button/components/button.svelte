@@ -5,18 +5,21 @@
 	// -=-=-=-=- Props -=-=-=-=- //
 	type $$Props = Props;
 
+	export let href: $$Props['href']= undefined;
+	export let newPage: $$Props['newPage']= undefined;
+
 	let className: $$Props['class'] = undefined;
 	export { className as class };
 
 	export let buttonClass =
-		'flex flex-col p-[10px] justify-center items-center bg-primary-500 rounded-[10px] cursor-pointer overlay h-fit text-white dark:text-white';
-	export let href: undefined | string = undefined;
+		'flex flex-col p-[10px] px-[20px] justify-center items-center bg-primary-500 rounded-[10px] cursor-pointer overlay h-fit text-white dark:text-white';
+	
 
 	$: buttonCls = cn(buttonClass, className);
 </script>
 
 {#if href}
-	<a {href}>
+	<a {href} target={newPage ? "_blank" : "_self"}>
 		<button class={buttonCls} {...$$restProps} on:click>
 			<slot />
 		</button>

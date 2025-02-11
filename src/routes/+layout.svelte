@@ -16,7 +16,7 @@
 	import { cn } from '@lib/utils';
 </script>
 
-<Flex.Col class={cn("bg-white gap-5 overflow-y-scroll hide-scrollbar dark:bg-background")} style="height: 100%">
+<Flex.Col class={cn("bg-white gap-5 overflow-y-scroll hide-scrollbar box-border dark:bg-background")} style="height: 100%">
     {@render children()}
 </Flex.Col>
 
