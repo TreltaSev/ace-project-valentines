@@ -17,5 +17,5 @@ siblink run init
 
 - Run Development:
 ```
-bun run dev
+bun run dev 
 ```
