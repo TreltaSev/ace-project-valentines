@@ -4,13 +4,16 @@
 	import DarkMode from '~icons/ic/round-light-mode';
 	import LightMode from '~icons/ic/round-dark-mode';
 	import AddIcon from '~icons/mingcute/add-fill';
+	import CbiDvd from '~icons/cbi/dvd';
 
 	import type { ToggleableWritable } from '@lib/internal';
 	import { cn } from '@lib/utils';
 	import { global_mode$ } from '@lib/stores/mode';
+	import { global_dvd$ } from '@lib/stores/dvd';
 	import { type Writable } from 'svelte/store';
 
 	let mode$: Writable<'dark' | 'light' | string> = global_mode$.mode$;
+	let dvd$: Writable<boolean> = global_dvd$.mode$;
 
 	let parentActive$: ToggleableWritable;
 </script>
@@ -45,5 +48,16 @@
 		{:else}
 			<DarkMode class="shrink-0 text-gray-300" />
 		{/if}
+	</SpeedDial.Item>
+
+	<!-- dvd mode -->
+	<SpeedDial.Item
+		class={cn(
+			'bg-primary-800 hover:bg-primary-700',
+			$dvd$ && 'bg-primary-500 hover:bg-primary-400'
+		)}
+		on:click={() => global_dvd$.toggle()}
+	>
+		<CbiDvd class="shrink-0 text-gray-300" />
 	</SpeedDial.Item>
 </SpeedDial.Menu>
