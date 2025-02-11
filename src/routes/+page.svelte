@@ -1,6 +1,12 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import { Flex, Button, Span, Page } from '@ui';
 	import { SpeedDial } from '@lib/components';
+	import { onMount } from 'svelte';
+
+	onMount(() => {
+		console.info("Base: ", base)
+	})
 </script>
 
 <Page._>
@@ -15,13 +21,13 @@
 		<Flex.Col class="items-center gap-2.5">
 			<Span class="text-xl">Start Navigating</Span>
 			<Flex.Row class="gap-2.5">
-				<Button class="rounded-full px-5" href="/about">
+				<Button class="rounded-full px-5" href="{base}/about">
 					<Span class="text-white text-xl">About</Span>
 				</Button>
-				<Button class="rounded-full px-5" href="/history">
+				<Button class="rounded-full px-5" href="{base}/history">
 					<Span class="text-white text-xl">History</Span>
 				</Button>
-				<Button class="rounded-full px-5" href="/highlights">
+				<Button class="rounded-full px-5" href="{base}/highlights">
 					<Span class="text-white text-xl">Highlights</Span>
 				</Button>
 			</Flex.Row>

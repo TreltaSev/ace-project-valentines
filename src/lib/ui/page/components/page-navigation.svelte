@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { base } from '$app/paths';
+
 	import { cn } from '@lib/utils';
 	import type { NavigationProps } from '..';
 
@@ -19,7 +21,7 @@
 <nav class={pageCls}>
 	<Page.Brand />
 	<Separator />
-	<a href="/about" class="fw opacity-80 hover:opacity-60"><Span>About</Span></a>
-	<a href="/history" class="fw opacity-80 hover:opacity-60"><Span>History</Span></a>
-	<a href="/highlights" class="fw opacity-80 hover:opacity-60"><Span>Highlights</Span></a>
+	<a href="{base}/about" class="fw opacity-80 hover:opacity-60"><Span>About</Span></a>
+	<a href="{base}/history" class="fw opacity-80 hover:opacity-60"><Span>History</Span></a>
+	<a href="{base}/highlights" class="fw opacity-80 hover:opacity-60"><Span>Highlights</Span></a>
 </nav>
