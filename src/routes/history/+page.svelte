@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import { Flex, Button, Span, Page, Image } from '@ui';
 	import { Tooltip } from 'flowbite-svelte';
 
@@ -53,11 +54,15 @@
 				View Source
 			</Button>
 		</Flex.Col>
-		<Image src="/images/charlotte-bronte.png" class="w-80" alt="Charlotte Bronte" />
+		<Image src="{base}/images/charlotte-bronte.png" class="w-80" alt="Charlotte Bronte" />
 	</Flex.Row>
 
 	<Flex.Row class="gap-10 h-fit">
-		<Image src="/images/frederick-douglass.jpg" class="w-40 h-full" alt="Frederick Douglass" />
+		<Image
+			src="{base}/images/frederick-douglass.jpg"
+			class="w-40 h-full"
+			alt="Frederick Douglass"
+		/>
 
 		<Flex.Col class="h-fit">
 			<Span class="header">Lies and deceit</Span>
