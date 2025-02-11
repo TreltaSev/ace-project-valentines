@@ -29,7 +29,7 @@
 	--color-primary-800: #3c2458;
 	--color-primary-900: #1e122c;
 
-    --color-background: #241F22;
+	--color-background: #241f22;
 
 	--font-dmMono: 'DM Mono';
 }
@@ -65,6 +65,21 @@
 			0px 4px 4px 0px rgba(0, 0, 0, 0.25),
 			0px 0px 0px 1px rgba(255, 255, 255, 0.1);
 	}
+
+	.hide-scrollbar {
+		-ms-overflow-style: none; /* IE and Edge */
+		scrollbar-width: none; /* Firefox */
+	}
+
+	.hide-scrollbar::-webkit-scrollbar {
+		display: none;
+	}
+
+	.header {
+		@apply text-[4rem];
+		color: theme("colors.primary.500") !important;
+	}
 }
+
 
 @custom-variant dark (&:where(.dark, .dark *));
