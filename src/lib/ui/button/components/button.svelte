@@ -19,8 +19,8 @@
 </script>
 
 {#if href}
-	<a {href} target={newPage ? "_blank" : "_self"}>
-		<button class={buttonCls} {...$$restProps} on:click>
+	<a {href} class={buttonCls} target={newPage ? "_blank" : "_self"}>
+		<button {...$$restProps} on:click>
 			<slot />
 		</button>
 	</a>

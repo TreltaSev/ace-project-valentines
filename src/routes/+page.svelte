@@ -1,8 +1,8 @@
 <script lang="ts">
 	import { base } from '$app/paths';
 	import { Flex, Button, Span, Page } from '@ui';
-	import { SpeedDial } from '@lib/components';
 	import { onMount } from 'svelte';
+	import MdiGithub from '~icons/mdi/github';
 
 	onMount(() => {
 		console.info("Base: ", base)
@@ -31,6 +31,12 @@
 					<Span class="text-white text-xl">Highlights</Span>
 				</Button>
 			</Flex.Row>
+			<a href="https://github.com/TreltaSev/ace-project-valentines" target="_blank" class="w-full">
+				<Button class="mt-5 rounded-full px-5 w-full items-center justify-center gap-2.5 bg-black flex-row">
+					<MdiGithub class="size-7"/>
+					<Span class="text-white text-xl">View on Github</Span>
+				</Button>
+			</a>
 		</Flex.Col>
 	</Flex.Col>
 </Page._>
