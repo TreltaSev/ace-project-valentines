@@ -26,3 +26,9 @@
         height: 100%;
     }
 </style>
+
+
+<svelte:head>
+	<title>Valentines Project</title>
+	<link rel="icon" type="image/svg" href="/favicon.png" />
+</svelte:head>
