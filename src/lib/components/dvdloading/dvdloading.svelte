@@ -44,7 +44,7 @@
 </script>
 
 {#if $dvd$}
-	<div class="logo" style="top: {position.y}px; left: {position.x}px;">
+	<div class="logo z-50" style="top: {position.y}px; left: {position.x}px;">
 		<FlatColorIconsDvdLogo class="size-30" />
 	</div>
 {/if}

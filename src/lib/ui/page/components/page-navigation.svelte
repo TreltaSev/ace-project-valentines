@@ -13,7 +13,7 @@
 	export { className as class };
 
 	export let pageClass =
-		'flex flex-row w-full h-20 shrink-0 bg-transparent dark:bg-black/20 gap-5 px-90 box-border items-center [&_.fw]:text-primary-500 [&_.fw]:dark:text-white';
+		'flex flex-row w-full relative h-20 shrink-0 bg-transparent dark:bg-[#201c1c] gap-5 px-90 box-border items-center [&_.fw]:text-primary-500 [&_.fw]:dark:text-white';
 
 	$: pageCls = cn(pageClass, className);
 </script>
