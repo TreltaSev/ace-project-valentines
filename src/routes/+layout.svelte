@@ -1,5 +1,7 @@
 <script lang="ts">
 	import { Flex } from '@ui';
+	import Dvdloading from '@lib/components/dvdloading/dvdloading.svelte';
+	
 	let { children } = $props();
 	import '../app.css';
 
@@ -19,6 +21,8 @@
 <Flex.Col class={cn("bg-white gap-5 overflow-y-scroll hide-scrollbar box-border dark:bg-background")} style="height: 100%">
     {@render children()}
 </Flex.Col>
+
+<Dvdloading/>
 
 <style>
     :global(html, body) {

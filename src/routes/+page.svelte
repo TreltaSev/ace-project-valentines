@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { base } from '$app/paths';
-	import Dvdloading from '@lib/components/dvdloading/dvdloading.svelte';
 	import { Flex, Button, Span, Page } from '@ui';
 	import { onMount } from 'svelte';
 	import MdiGithub from '~icons/mdi/github';
@@ -39,6 +38,6 @@
 				</Button>
 			</a>
 		</Flex.Col>
-		<Dvdloading/>
+		
 	</Flex.Col>
 </Page._>
